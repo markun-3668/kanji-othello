@@ -47,28 +47,6 @@ python -m http.server 8000
 # ブラウザで http://localhost:8000 にアクセス
 ```
 
-## GitHub Pagesでの公開手順
-
-1. **GitHubリポジトリの作成**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: 難問オセロゲーム"
-   git branch -M main
-   git remote add origin https://github.com/your-username/kanji-othello.git
-   git push -u origin main
-   ```
-
-2. **GitHub Pagesの有効化**
-   - GitHubリポジトリの Settings タブに移動
-   - 左側メニューから「Pages」を選択
-   - Source で「Deploy from a branch」を選択
-   - Branch で「main」を選択、フォルダは「/ (root)」を選択
-   - 「Save」をクリック
-
-3. **公開URL**
-   - 数分後に `https://your-username.github.io/kanji-othello/` でアクセス可能
-
 ## 開発について
 
 ### フォルダ構成
@@ -88,11 +66,6 @@ kanji_othello_v3/
 - 時間制限モード  
 - 漢字辞書機能
 - マルチプレイヤー対応
-
-## ライセンス
-
-このプロジェクトは教育目的で作成されました。
-自由に学習・改良・配布していただけます。
 
 ## 貢献
 
