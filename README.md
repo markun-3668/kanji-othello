@@ -1,0 +1,106 @@
+# 難問オセロ (Kanji Othello)
+
+漢字の読み方を覚えながら楽しめる、教育的なオセロゲームです。
+
+## 特徴
+
+- **3つの難易度レベル**: 初心者から上級者まで対応
+  - 簡単: 基本的な漢字（動物、自然など）
+  - 普通: 中級レベルの漢字（四字熟語、日常語彙）
+  - 難しい: 高難度の漢字（専門用語、古語など）
+
+- **教育的価値**: 遊びながら漢字の読み方を学習
+- **直感的なUI**: わかりやすいゲーム画面
+- **リアルタイム判定**: 入力した読み方の正誤を即座に判定
+
+## 遊び方
+
+1. 難易度を選択してゲームを開始
+2. 通常のオセロのルールに従って、石を置く場所をクリック
+3. 選択したマスの漢字の読み方を入力
+4. 正解すると石が置かれ、相手の石をひっくり返せます
+5. 最終的に自分の色の石が多い方の勝利
+
+## 技術仕様
+
+- **フロントエンド**: HTML5/CSS3/JavaScript
+- **レスポンシブデザイン**: モバイル対応済み
+- **ホスティング**: GitHub Pages対応
+- **ブラウザ対応**: モダンブラウザ全般
+
+## デモ
+
+[🎮 オンラインでプレイ](https://markun-3668.github.io/kanji-othello/)
+
+## ローカル実行
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/your-username/kanji-othello.git
+
+# ディレクトリに移動
+cd kanji-othello
+
+# ローカルサーバーで実行（例：Python）
+python -m http.server 8000
+
+# ブラウザで http://localhost:8000 にアクセス
+```
+
+## GitHub Pagesでの公開手順
+
+1. **GitHubリポジトリの作成**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: 難問オセロゲーム"
+   git branch -M main
+   git remote add origin https://github.com/your-username/kanji-othello.git
+   git push -u origin main
+   ```
+
+2. **GitHub Pagesの有効化**
+   - GitHubリポジトリの Settings タブに移動
+   - 左側メニューから「Pages」を選択
+   - Source で「Deploy from a branch」を選択
+   - Branch で「main」を選択、フォルダは「/ (root)」を選択
+   - 「Save」をクリック
+
+3. **公開URL**
+   - 数分後に `https://your-username.github.io/kanji-othello/` でアクセス可能
+
+## 開発について
+
+### フォルダ構成
+```
+kanji_othello_v3/
+├── index.html          # メインHTML
+├── css/
+│   └── styles.css      # スタイルシート
+├── js/
+│   ├── game.js         # ゲームロジック
+│   └── api.js          # API関連（現在無効化）
+└── README.md           # このファイル
+```
+
+### 機能拡張のアイデア
+- スコア記録機能
+- 時間制限モード  
+- 漢字辞書機能
+- マルチプレイヤー対応
+
+## ライセンス
+
+このプロジェクトは教育目的で作成されました。
+自由に学習・改良・配布していただけます。
+
+## 貢献
+
+バグ報告や機能提案は Issues でお知らせください。
+プルリクエストも歓迎します。
+
+---
+
+**作成者**: 大橋眞士  
+**作成日**: 2025年6月  
+**最終更新**: 2025年6月6日

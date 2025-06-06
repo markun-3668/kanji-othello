@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="漢字の読み方を学びながら楽しめる教育的オセロゲーム。3つの難易度で初心者から上級者まで対応。">
+    <meta name="keywords" content="オセロ,漢字,教育,ゲーム,日本語学習,リバーシ">
+    <meta name="author" content="大橋眞士">
+    <meta property="og:title" content="難問オセロ - 漢字学習ゲーム">
+    <meta property="og:description" content="漢字の読み方を学びながら楽しめる教育的オセロゲーム">
+    <meta property="og:type" content="website">
+    <title>難問オセロ - 漢字学習ゲーム</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>難問オセロ</h1>
+        <p>漢字の読み方を学びながら楽しむオセロゲーム</p>
+        
+        <div id="difficulty-selection">
+            <button class="difficulty-btn" data-difficulty="easy">簡単</button>
+            <button class="difficulty-btn" data-difficulty="medium">普通</button>
+            <button class="difficulty-btn" data-difficulty="hard">難しい</button>
+        </div><br>
+        <div id="score"></div>
+        <div id="board"></div>
+        <div id="status"></div>
+        <div id="input-area">
+            <input type="text" id="kanji-reading" placeholder="漢字の読みを入力">
+            <button id="submit-reading">回答</button>
+        </div>
+        
+        <footer>
+            <p><small>© 2025 大橋眞士 - 教育目的で作成</small></p>
+        </footer>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
